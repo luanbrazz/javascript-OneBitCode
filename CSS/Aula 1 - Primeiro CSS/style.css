@@ -1,6 +1,16 @@
 li{
-    color: blueviolet;
+    color: rgb(239, 237, 241);
 }
 h1{
-    font-size: 30px;
+    color: cornsilk;
+/*     border-color: cyan;
+    border-width: 2px;
+    border-style: dashed; */
+    border: 2px dashed cyan ;
+}
+
+body{
+    background-image: url(https://s2.glbimg.com/z_M0Kir7fj1ZZAtq0dCxmeohYFs=/620x430/e.glbimg.com/og/ed/f/original/2022/01/26/61f12596792e7300116ba90c.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
