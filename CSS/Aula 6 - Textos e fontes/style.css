@@ -7,5 +7,14 @@ p{
 }
 
 h1{
-    font-family: 'arial', cursive;
+    font-family: 'Yellowtail', cursive;
+/*     margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 50px; */
+/*     margin: 45px 0px 100px 30px; */
+    margin: 45px auto 100px auto; /* forma para centralizar na tela */
+    width: 15%; /* LARGURA - % do espaço disponivel */
+
+    border: 2px solid;
+    padding: 10px 10px 10px 10px ;
 }
