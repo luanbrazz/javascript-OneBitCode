@@ -80,3 +80,38 @@ console.log(velocity)                           /* >>85 */
 
 speedUp(100, 20)                                /* >>"Nova velocidade: 120" */
 
+
+
+
+//Scope
+let spaceshipName = "Supernova"
+
+function changeSpaceshipName() {
+    spaceshipName = "Elemental"
+}
+
+console.log(spaceshipName)      /* >>"Supernova" */
+
+changeSpaceshipName()           /* >>"Elemental" */
+
+console.log(spaceshipName)      /*  */
+
+//
+
+function setSpaceshipDetails() {
+    let velocity = 50
+    if (velocity == 50) {
+        velocity = 60
+        var spaceshipName = "Elemental"
+        let spaceshipType = "Discovery"
+    }
+
+        console.log(velocity)
+        console.log(spaceshipName)
+        console.log(spaceshipType)
+}
+
+setSpaceshipDetails()
+        /* >> 60
+        >> "Elemental"
+        >>  ERROR */
