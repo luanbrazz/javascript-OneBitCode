@@ -83,7 +83,7 @@ speedUp(100, 20)                                /* >>"Nova velocidade: 120" */
 
 
 
-//Scope
+//05 SCOPE
 let spaceshipName = "Supernova"
 
 function changeSpaceshipName() {
@@ -115,3 +115,61 @@ setSpaceshipDetails()
         /* >> 60
         >> "Elemental"
         >>  ERROR */
+
+//
+
+
+// 06 FUNÇÕES ANÔNIMAS
+let doubleSpeed = function(velocity) {
+    return velocity * 2
+}
+
+let newVelocity = doubleSpeed(40)
+
+console.log(newVelocity)
+/* >> 80 */
+
+//ex. 2
+console.log(speedUp(60, 10))        /* 70 */
+console.log(doubleSpeed(50))        /* >> Uncaught ReferenceError: doubleSpeed is not defined */
+
+let doubleSpeedd = function(velocity) {
+    return velocity * 2
+}
+
+function speedUp(velocity, acceleration) {
+    return velocity + acceleration
+}
+
+
+// 07 ARROOW FUNCTIONS
+const doubleVelocity = (velocity) => {
+    return velocity * 2
+}
+
+console.log(doubleVelocity)     /* >> 120 */
+
+//ou
+const doubleVelocityy = (velocity) => velocity * 2
+
+console.log(doubleVelocity)     /* >> 120 */
+
+
+// 08 HIGH ORDER FUNCTIONS
+function doubleVelocity(velocity, printer) {
+    console.log("Entrei em doubleVelocity")
+    let newVelocityyy = velocity * 2
+    printer(newVelocityyy)
+    return newVelocityyy
+}
+
+let printVelocity = velocity => {
+    console.log("Nova velocidade: " + velocity + "km/s")    
+}
+
+let newVelocityyy = doubleVelocity (60, printVelocity)
+console.log(newVelocityyy)
+/*  >>"Entrei em doubleVelocity"
+    >>"Nova velocidade: 120km/s"
+    >>120 */
+
