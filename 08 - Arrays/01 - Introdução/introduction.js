@@ -115,3 +115,19 @@ console.log(extractedNames)
 
 
 // 05 ITERAÇÃO EM ARRAYS
+//ex.1 (forEach)
+let hhitchedSapaceships = ["Demeter", "Darwin", "Supernova", "Fenix", "Puller"]
+
+hhitchedSapaceships.forEach(function(currentSpaceship, index){
+    console.log("Nave: " + currentSpaceship + "\nIndice: " + index)
+})
+/*  >>"Nave: Demeter
+       Indice: 0"
+    >>"Nave: Darwin
+       Indice: 1"
+    >>"Nave: Supernova
+       Indice: 2"
+    >>"Nave: Fenix
+       Indice: 3"
+    >>"Nave: Puller
+       Indice: 4" */
