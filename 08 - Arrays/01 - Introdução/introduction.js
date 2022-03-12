@@ -131,3 +131,62 @@ hhitchedSapaceships.forEach(function(currentSpaceship, index){
        Indice: 3"
     >>"Nave: Puller
        Indice: 4" */
+
+
+
+//ex.1.1 (forEach)
+const socialNetworks = ["youtube", "twitter", "instagram", "Facebook"]
+
+socialNetworks.forEach((socialNetwork, index, array) => {
+   console.log(index, socialNetwork, array)
+})
+/*
+   >>0 "youtube" // [object Array] (4)
+      ["youtube","twitter","instagram","Facebook"]
+   >>1 "twitter" // [object Array] (4)
+      ["youtube","twitter","instagram","Facebook"]
+   >>2 "instagram" // [object Array] (4)
+      ["youtube","twitter","instagram","Facebook"]
+   >>3 "Facebook" // [object Array] (4)
+      ["youtube","twitter","instagram","Facebook"] 
+ */
+
+
+
+//ex.2(toUpperCase)
+let listaNaves = ["Demeter", "Darwin", "Supernova", "Fenix", "Puller"]
+
+let upcasedListaNaves = listaNaves.map(function(naveAtual){
+   let upcased = naveAtual.toUpperCase()
+   return upcased
+})
+
+console.log(upcasedListaNaves)
+/*
+>>["DEMETER","DARWIN","SUPERNOVA","FENIX","PULLER"] 
+ */
+
+
+
+//ex.3 (filter)
+let hitchedSapaceshipss = ["Demeter", "Darwin", "Supernova", "Fenix", "Puller"]
+
+let with7Chars = hitchedSapaceshipss.filter(element => {return element.length >= 7})
+
+console.log(with7Chars)
+/* 
+>>["Demeter","Supernova"]
+*/
+
+
+
+//ex.4 (find)
+let hitchedSapaceshipsss = ["Demeter", "Darwin", "Supernova", "Fenix", "Puller"]
+
+let with7Charss = hitchedSapaceshipsss.find(element => {return element.length >= 7})
+
+console.log(with7Charss)
+/* 
+>>"Demeter"
+*/
+
